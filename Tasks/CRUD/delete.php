@@ -14,7 +14,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         // Set parameters
         $param_id = trim($_POST["id"]);
         
-        // Attempt to execute the prepared statement
+
         if($stmt->execute()){
             // Records deleted successfully. Redirect to landing page
             header("location: index.php");
