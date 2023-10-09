@@ -10,7 +10,8 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
     if($stmt = $mysqli->prepare($sql)){
         // Bind variables to the prepared statement as parameters
         $stmt->bind_param("i", $param_id);
-        
+        $stmt->bind_param("i", $param_id);
+        $stmt->bind_param("i", $param_id);
         // Set parameters
         $param_id = trim($_GET["id"]);
         

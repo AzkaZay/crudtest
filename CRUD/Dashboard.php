@@ -57,11 +57,7 @@
                                 echo "<tbody>";
                                 while($row = $result->fetch_array()){
                                     echo "<tr>";
-                                        echo "<td>" . $row['id'] . "</td>";
-                                        echo "<td>" . $row['name'] . "</td>";
-                                        echo "<td>" . $row['sprinkles'] . "</td>";
-                                        echo "<td>" . $row['flavour'] . "</td>";
-                                        echo "<td>" . $row['price'] . "</td>";
+
 
                                         echo "<td>";
                                         
