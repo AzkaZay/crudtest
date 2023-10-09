@@ -43,7 +43,18 @@
                     $sql = "SELECT * FROM orders";
                     if($result = $mysqli->query($sql)){
                         if($result->num_rows > 0){
-
+                            echo '<table class="table table-bordered table-striped">';
+                                echo "<thead>";
+                                    echo "<tr>";
+                                        echo "<th>#</th>";
+                                        echo "<th>Name</th>";
+                                        echo "<th>Sprinkles</th>";
+                                        echo "<th>Flavours</th>";
+                                        echo "<th>Price</th>";
+                                        echo "<th>Action</th>";
+                                    echo "</tr>";
+                                echo "</thead>";
+                                echo "<tbody>";
                                 while($row = $result->fetch_array()){
                                     echo "<tr>";
                                         echo "<td>" . $row['id'] . "</td>";
