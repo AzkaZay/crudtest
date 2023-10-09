@@ -23,7 +23,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             echo "Oops!";
         }
     }
-     
+    
     // Close statement
     $stmt->close();
     
