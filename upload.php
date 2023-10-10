@@ -7,6 +7,7 @@ $dbname = 'demo';
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
+    die('Could not connect to MySQL server: '
     die('Could not connect to MySQL server: ' . $conn->connect_error);
 }
 
